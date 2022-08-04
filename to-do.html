@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+  </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif, Helvetica;
+      background-color: #d69170;
+    }
+    .container {
+      width: 500px;
+      margin: 20px auto;
+    }
+    .form {
+      background-color: rgba(255, 255, 255, 0.696);
+      border-radius: 6px;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+    }
+    .input {
+      padding: 10px;
+      border: 1px solid rgba(221, 221, 221, 0.695);
+      border-radius: 6px;
+      flex: 1;
+    }
+    .input:focus {
+      outline: none;
+    }
+    .add {
+      border: none;
+      background-color: #cc6b3e;
+      color: rgba(242, 235, 235, 0.893);
+      padding: 10px;
+      border-radius: 6px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+    .tasks {
+      background-color: rgba(242, 235, 235, 0.893);
+      margin-top: 20px;
+      border-radius: 6px;
+      padding: 20px;
+    }
+    .tasks .task {
+      padding: 10px;
+      border-radius: 6px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: 0.3s;
+      cursor: pointer;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+      background-color: white;
+    }
+  
+  </style>
+  <body>
+    <div class="container">
+      <div class="form">
+        <input type="text" class="input" />
+        <input type="submit" class="add" value="Add Task" />
+      </div>
+      <div class="tasks"></div>
+    </div>
+    <script type="text/javascript" src="to-do.js"></script>
+  </body>
+</html>
